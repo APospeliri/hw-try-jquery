@@ -9,7 +9,8 @@ $(function() {
   //two option
 	//$('h1:eq(1)').text('Весенние скидки')
 	
-	$('#vacations-wrapper h1').text('Весенние скидки')
+  //three option
+	 //$('#vacations-wrapper h1').text('Весенние скидки')
 
-
+$('span').text('$199')
 });
