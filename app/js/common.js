@@ -2,6 +2,9 @@ $(function() {
 
 	// Custom JS
 	//console.log('Hello Word')
-	$('.details').css('font-size','22px')
+	//first options
+	$('h1').last().text('Весенние скидки')
+
+	//$('h1:eq(1)').text('Весенние скидки')
 
 });
