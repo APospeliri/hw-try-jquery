@@ -12,5 +12,5 @@ $(function() {
   //three option
 	 //$('#vacations-wrapper h1').text('Весенние скидки')
 
-		$('.europe span').text('$99')
+		$('.sorting a').first().text('USA')
 });
