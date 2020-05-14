@@ -7,6 +7,7 @@ $(function() {
 	$("h1:last").text("Весенние Скидки")
 	// $(".details").text("$199")
 	$("span").text("$199")
+	$("span[target='_blank']").text("$99")
 
 
 });
