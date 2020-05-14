@@ -8,6 +8,7 @@ $(function() {
 	// $(".details").text("$199")
 	$("span").text("$199")
 	$("span[target='_blank']").text("$99")
+	$("a").first().text("USA")
 
 
 });
