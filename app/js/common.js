@@ -1,6 +1,7 @@
 $(function() {
 
 	// Custom JS
-	// console.log('start')
+	//console.log('Hello Word')
+	$('h2').css('color','purple')
 
 });
