@@ -1,9 +1,9 @@
 $(function() {
-
-    // h2- purple
 	// Custom JS
 	// console.log('start')
 	console.log('Hello World')
+
+    // h2- purple
 	$("h2").css("color", "purple")
 
     // font size 22
@@ -33,4 +33,3 @@ $(function() {
 
 
 });
-
