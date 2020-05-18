@@ -29,7 +29,7 @@ h1, p
   border-radius: 4px
   margin: 0 auto
 
-#vacations-wrapper
+#vacations-wrapper, #tours-wrapper
   background: #172027
   color: white
   width: 600px
@@ -47,4 +47,67 @@ h1, p
     font-weight: 600
     letter-spacing: 0.5px
     font-size: 18px
+
+// level 2
+#tours-wrapper
+  width: 1200px
+  padding-top: 60px
+  padding-bottom: 60px
+  position: relative
+  background-color: #104A56
+  h1
+    text-align: left
+
+#tours
+  display: flex
+  justify-content: space-between
+  padding-left: 0
+  li
+    width: 100%
+    list-style: none
+    display: flex
+    flex-direction: column
+    align-items: center
+  .america, .europe, .asia
+    background: #172027
+    margin: 0 10px
+    padding: 20px
+    border-radius: 2px
+  .details
+    background: #007876
+    width: 100%
+    padding: 10px
+    border-radius: 2px
+    text-align: center
+
+
+.vote
+  padding-top: 10px
+  display: flex
+  justify-content: center
+  padding-left: 0
+  margin-bottom: 20px
+  li
+    &:first-of-type
+      margin-right: 10px
+  a
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 30px
+    height: 30px
+    background-color: #91D478
+    border-radius: 2px
+.sorting
+  display: flex
+  position: absolute
+  top: 60px
+  right: 0
+  li
+    margin-right: 30px
+  a
+    font-size: 24px
+    color: #F9F871
+
+// level 2
 //header END
