@@ -41,5 +41,9 @@
 // });
 
 $(function() {
-	$("#tours").children("li").css("background-color", "#45ad7b")
+
+	// 2-2 background color for 4 cards
+	// $("#tours").children("li").css("background-color", "#45ad7b")
+
+	$(".sale, .asia").css("background-color", "#45ad7b")
 });
