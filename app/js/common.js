@@ -1,14 +1,14 @@
-$(function() {
-	// Custom JS
-	console.log('Hello World')
-	$("h2").css("color", "purple")
-	$(".details").css("font-size", "22px")
-	$("h1:last").text("Весенние Скидки")
-	$("span").text("$199")
-    $("span[target='_blank']").text("$99")
-	$("a").first().text("USA")
-    $("a").last().text("Africa")
-});
+// $(function() {
+// 	// Custom JS
+// 	console.log('Hello World')
+// 	$("h2").css("color", "purple")
+// 	$(".details").css("font-size", "22px")
+// 	$("h1:last").text("Весенние Скидки")
+// 	$("span").text("$199")
+//     $("span[target='_blank']").text("$99")
+// 	$("a").first().text("USA")
+//     $("a").last().text("Africa")
+// });
 
 // $(function() {
 	// Custom JS
@@ -40,3 +40,6 @@ $(function() {
     // $("a").last().text("Africa")
 // });
 
+$(function() {
+	$("#tours").children("li").css("background-color", "#45ad7b")
+});
