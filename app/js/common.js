@@ -60,7 +60,10 @@
 	// 2-7 Chicago added
 	// $("h2").first().text("New York Chicago")
 
+	// 2-8 Tokyo changed on Osaka
+	// $("h2").last().text("Osaka, Japan")
+// });
 
 $(function() {
-	$("h2").last().text("Osaka, Japan")
+	$("#tours").children("li").last().prev().find("a").css("background-color", "yellow")
 });
