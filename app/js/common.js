@@ -62,8 +62,12 @@
 
 	// 2-8 Tokyo changed on Osaka
 	// $("h2").last().text("Osaka, Japan")
+
+	// 2-9 links for Madrid changed on yellow
+	// $("#tours").children("li").last().prev().find("a").css("background-color", "yellow")
 // });
 
+
 $(function() {
-	$("#tours").children("li").last().prev().find("a").css("background-color", "yellow")
+	$("#tours").prev("h1").text("Wanna see the world? Nothing easier!")
 });
