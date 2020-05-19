@@ -45,5 +45,10 @@ $(function() {
 	// 2-2 background color for 4 cards
 	// $("#tours").children("li").css("background-color", "#45ad7b")
 
-	$(".sale, .asia").css("background-color", "#45ad7b")
+	// 2-3 background color for 2 last cards
+	// $(".sale, .asia").css("background-color", "#45ad7b")
+
+	$("#tours li:first").css("background-color", "#45ad7b")
+
+	
 });
