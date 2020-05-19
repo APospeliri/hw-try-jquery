@@ -28,11 +28,21 @@ $(function() {
 	//$('.sorting a').last().text('Africa')
 
 	//2-2
+	//$('#tours > li').css('background','#1C7E92')
 	//$('#tours').find('li').css('background','#1C7E92')
+	
 
 	//2-3
+	//$('.sale , .asia').css('background','#1C7E92')
 	//$('#tours li:gt(3)').css('background','#1C7E92')
-	
+
 	//2-4
-	$('#tours').find('li').first().css('background','#1C7E92')
+	//$('#tours li:first').css('background','#1C7E92')
+	//$('#tours').find('li').first().css('background','#1C7E92')
+	
+	//2-5
+	$('#tours li:odd').find('span').html('$999 for 5 nights')
+	
+
+	
 });
