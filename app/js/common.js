@@ -45,10 +45,13 @@ $(function() {
 	//$('#tours li:odd').find('span').text('$999 for 5 nights')
 	
 	//2-6
-	$('.america').find('span').css('color','red')
+	//$('.america').find('span').css('color','red')
 
 	//2-7
-	//$('').find('span').text('$999 for 5 nights')
+	//$('h2:first').append(' Chicago')
+
+	//2-8
+	$('h2:last').text('Osacu, Japan')
 	
 
 	
