@@ -60,11 +60,6 @@
 	// 2-7 Chicago added
 	// $("h2").first().text("New York Chicago")
 
-// });
-
-// $(function() {
-	
-// });
 
 $(function() {
 	$("h2").last().text("Osaka, Japan")
