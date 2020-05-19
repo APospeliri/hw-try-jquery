@@ -48,7 +48,10 @@ $(function() {
 	// 2-3 background color for 2 last cards
 	// $(".sale, .asia").css("background-color", "#45ad7b")
 
-	$("#tours li:first").css("background-color", "#45ad7b")
+	// 2-4 1-st card changed background-color
+	// $("#tours li:first").css("background-color", "#45ad7b")
+
+	$("#tours span:odd").text("999$")
 
 	
 });
