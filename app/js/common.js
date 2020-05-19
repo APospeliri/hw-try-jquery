@@ -57,6 +57,15 @@
 	// 2-6 price for New-York changed on red
 	// $(".america").find("span").css("color", "red")
 
+	// 2-7 Chicago added
+	// $("h2").first().text("New York Chicago")
+
+// });
+
+// $(function() {
+	
+// });
+
 $(function() {
-	$("h2").first().text("New York Chicago")
+	$("h2").last().text("Osaka, Japan")
 });
