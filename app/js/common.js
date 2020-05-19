@@ -40,7 +40,7 @@
     // $("a").last().text("Africa")
 // });
 
-$(function() {
+// $(function() {
 
 	// 2-2 background color for 4 cards
 	// $("#tours").children("li").css("background-color", "#45ad7b")
@@ -54,8 +54,9 @@ $(function() {
 	// 2-5 priсe for Paris and Tokyo corrected on 999$
 	// $("#tours span:odd").text("999$")
 
+	// 2-6 price for New-York changed on red
+	// $(".america").find("span").css("color", "red")
 
-	$(".america").find("span").css("color", "red")
-
-	
+$(function() {
+	$("h2").first().text("New York Chicago")
 });
