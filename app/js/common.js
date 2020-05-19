@@ -51,7 +51,11 @@ $(function() {
 	// 2-4 1-st card changed background-color
 	// $("#tours li:first").css("background-color", "#45ad7b")
 
-	$("#tours span:odd").text("999$")
+	// 2-5 priсe for Paris and Tokyo corrected on 999$
+	// $("#tours span:odd").text("999$")
+
+
+	$(".america").find("span").css("color", "red")
 
 	
 });
