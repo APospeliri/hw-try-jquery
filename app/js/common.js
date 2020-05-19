@@ -26,6 +26,10 @@ $(function() {
 
 	//1-6
 	//$('.sorting a').last().text('Africa')
+
 	//2-2
-	$('#tours').find('li').css('background','#1C7E92')
+	//$('#tours').find('li').css('background','#1C7E92')
+
+	//2-3
+	$('#tours li:gt(3)').css('background','#1C7E92')
 });
