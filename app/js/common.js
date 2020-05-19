@@ -31,5 +31,8 @@ $(function() {
 	//$('#tours').find('li').css('background','#1C7E92')
 
 	//2-3
-	$('#tours li:gt(3)').css('background','#1C7E92')
+	//$('#tours li:gt(3)').css('background','#1C7E92')
+	
+	//2-4
+	$('#tours').find('li').first().css('background','#1C7E92')
 });
