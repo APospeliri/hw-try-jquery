@@ -25,5 +25,7 @@ $(function() {
 	//$('.europe span').text('$99')
 
 	//1-6
-	$('.sorting a').last().text('Africa')
+	//$('.sorting a').last().text('Africa')
+	//2-2
+	$('#tours').find('li').css('background','#1C7E92')
 });
