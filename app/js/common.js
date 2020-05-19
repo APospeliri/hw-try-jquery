@@ -41,7 +41,14 @@ $(function() {
 	//$('#tours').find('li').first().css('background','#1C7E92')
 	
 	//2-5
-	$('#tours li:odd').find('span').html('$999 for 5 nights')
+	//$('#tours li:odd').find('span').html('$999 for 5 nights')
+	//$('#tours li:odd').find('span').text('$999 for 5 nights')
+	
+	//2-6
+	$('.america').find('span').css('color','red')
+
+	//2-7
+	//$('').find('span').text('$999 for 5 nights')
 	
 
 	
