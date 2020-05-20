@@ -51,7 +51,18 @@ $(function() {
 	//$('h2:first').append(' Chicago')
 
 	//2-8
-	$('h2:last').text('Osacu, Japan')
+	//$('h2:last').text('Osacu, Japan')
+	
+	//2-9
+	//$('#tours >li').last().prev().find('a').css('background','red')
+	//$('#tours').children('li').last().prev().find('a').css('background','red')
+	
+	//2-10
+	//$('#tours').prev().text('АААА РЕАЛЬНЫЕ АААА ТУРЫ')
+
+	//2-11
+	//$('h1').prev().find('#tours').children('li').last().prev().css('border','2px dashed red')
+	$('h1').last().parent().find('#tours').children('li').last().prev().css('background','#1C7E92').find('span').text('$1,577 for 14 nights')
 	
 
 	
