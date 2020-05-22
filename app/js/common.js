@@ -64,10 +64,12 @@
 	// $("h2").last().text("Osaka, Japan")
 
 	// 2-9 links for Madrid changed on yellow
-	// $("#tours").children("li").last().prev().find("a").css("background-color", "yellow")
+	// $("#tours").children("li").last().prev().find("a").css("background-color", "yello
+	
+	// 2-10 h1 was creative changed
+	// $("#tours").prev("h1").text("Wanna see the world? Nothing easier!")
 // });
 
-
 $(function() {
-	$("#tours").prev("h1").text("Wanna see the world? Nothing easier!")
+	$("h1").parent("div").children("ul").children(".sale").children("span").text("$1,577 for 14 nights")
 });
