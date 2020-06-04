@@ -71,20 +71,20 @@ $(function() {
 // })
 	
 // });
-//3-2
+//3-1-1
 	// $(document).ready(function(){
 	// 	let massage = $('<span>Call 1-555-jquery-air to book this tour</span>');
 	// 	$('.usa').css('text-align','center').find('span').after(massage)
 	// })
 
 // });
-//3-3
+//3-2
 // $(document).ready(function(){
 // $('button').remove()
 // })
 // });
 
-//3-4
+//3-2-1
 // $('button').on('click', function(){
 // 	let massage = $('<span>Call 1-555-jquery-air to book this tour</span>');
 // 	$('.usa').css('text-align','center').find('span').after(massage)
@@ -92,10 +92,17 @@ $(function() {
 // 	})
 // })
 
-//3-5
-$('.tour').css('cursor','pointer').on('click', function(){
+//3-3
+// $('.tour').css('cursor','pointer').on('click', function(){
+// 	let massage = $('<span>Call 1-555-jquery-air to book this tour</span>');
+// 	$('.usa').css('text-align','center').find('span').after(massage)
+// 	$('button').remove()
+// 	})
+// })
+//3-4
+$('.book').css('cursor','pointer').on('click', function(){
 	let massage = $('<span>Call 1-555-jquery-air to book this tour</span>');
-	$('.usa').css('text-align','center').find('span').after(massage)
-	$('button').remove()
+	$(this).parent().css('text-align','center').find('span').after(massage)
+	$(this).remove('button')
 	})
 })
