@@ -64,9 +64,18 @@ $(function() {
 	//$('h1').last().parent().find('#tours').children('li').last().prev().css('background','#1C7E92').find('span').text('$1,577 for 14 nights')
 	
 //task 3
-$(document).ready(function(){
-	let text = $('<span>Call 1-555-jquery-air to book this tour</span>');
-	$('.usa').css('text-align','center').find('span').after(text)
-})
+//3-1
+// $(document).ready(function(){
+// 	let text = $('<span>Call 1-555-jquery-air to book this tour</span>');
+// 	$('.usa').css('text-align','center').find('span').after(text)
+// })
 	
-});
+// });
+//3-2
+	$(document).ready(function(){
+		let massage = $('<span>Call 1-555-jquery-air to book this tour</span>');
+		$('.usa').css('text-align','center').find('span').after(massage)
+	})
+		
+	});
+
