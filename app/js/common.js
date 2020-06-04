@@ -51,7 +51,7 @@ $(function() {
 	//$('h2').first().append(' Chicago')
 
 	//2-8
-	$('h2').last().text('Osacu, Japan')
+	//$('h2').last().text('Osacu, Japan')
 	
 	//2-9
 	//$('#tours >li').last().prev().find('a').css('background','red')
@@ -61,8 +61,12 @@ $(function() {
 	//$('#tours').prev().text('АААА РЕАЛЬНЫЕ АААА ТУРЫ')
 
 	//2-11
-	$('h1').last().parent().find('#tours').children('li').last().prev().css('background','#1C7E92').find('span').text('$1,577 for 14 nights')
+	//$('h1').last().parent().find('#tours').children('li').last().prev().css('background','#1C7E92').find('span').text('$1,577 for 14 nights')
 	
-
+//task 3
+$(document).ready(function(){
+	let text = $('<span>Call 1-555-jquery-air to book this tour</span>');
+	$('.usa').css('text-align','center').find('span').after(text)
+})
 	
 });
