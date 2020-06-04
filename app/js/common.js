@@ -72,9 +72,15 @@ $(function() {
 	
 // });
 //3-2
+	// $(document).ready(function(){
+	// 	let massage = $('<span>Call 1-555-jquery-air to book this tour</span>');
+	// 	$('.usa').css('text-align','center').find('span').after(massage)
+	// })
+		
+	// });
+	//3-3
 	$(document).ready(function(){
-		let massage = $('<span>Call 1-555-jquery-air to book this tour</span>');
-		$('.usa').css('text-align','center').find('span').after(massage)
+	$('button').remove()
 	})
 		
 	});
