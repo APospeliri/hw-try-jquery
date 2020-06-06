@@ -6,7 +6,7 @@
 // 	$("h1:last").text("Весенние Скидки")
 // 	$("span").text("$199")
 //     $("span[target='_blank']").text("$99")
-// 	$("a").first().text("USA")
+	// $("a").first().text("USA")
 //     $("a").last().text("Africa")
 // });
 
@@ -71,11 +71,21 @@
 		
 	// 	2-11 (part 1) Madrid nights changed on 14
 	// 	$("h1").parent("div").children("ul").children(".sale").children("span").text("$1,577 for 14 nights")
-	
+// });
+// 2-11 (part 2) Madrid background changed
+// $(function() {
+	// $("h1").parent("div").children("ul").children(".sale").css("background-color", "#12fcf5")
+// 	$("h1").first().parent().find(".sale").css("background-color", "#12fcf5").children("span").text("$1,577 for 14 nights")
 // });
 
 
-// 2-11 (part 2) Madrid background changed
-$(function() {
-	$("h1").parent("div").children("ul").children(".sale").css("background-color", "#12fcf5")
+
+
+
+
+		// task-3-1.in card USA  added'Call 1-555-jquery-air to book this tour'
+$(document).ready(function(){
+	var tel=$('<span>Call 1-555-jquery-air to book this tour</span>');
+	$('.america').append(tel)
 });
+
