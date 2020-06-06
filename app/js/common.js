@@ -91,10 +91,13 @@
 
 
 // task-3-1-1 var "message" was used
+// $(document).ready(function(){
+// 	var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
+// 	$('.america').append(message)
+// });
+
+// task-4-1 all buttons was removed
 $(document).ready(function(){
-	var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
-	$('.america').append(message)
+	$('.vote').remove();
 });
-
-
 
