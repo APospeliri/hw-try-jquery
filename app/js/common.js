@@ -133,10 +133,19 @@
 // })
 
 // task-3-5. Refactor using function "closest" and "append"
+// $(document).ready(function(){
+// 	$('span').on('click', function(){
+// 		var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
+// 		$(this).closest('.america, .europe, .europe sale, .asia').append(message);
+// 		$(this).remove();
+// 	})
+// })
+
+// task-3-6. Click on card, massage on card, delete button (using "this")
 $(document).ready(function(){
-	$('span').on('click', function(){
+	$('.america, .europe, .sale, .asia').on('click', function(){
 		var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
-		$(this).closest('.america, .europe, .europe sale, .asia').append(message);
-		$(this).remove();
+		$(this).append(message);
+		$('.details', this).remove();
 	})
 })
