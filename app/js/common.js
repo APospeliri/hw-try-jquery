@@ -84,8 +84,17 @@
 
 
 		// task-3-1.in card USA  added'Call 1-555-jquery-air to book this tour'
+// $(document).ready(function(){
+// 	var tel=$('<span>Call 1-555-jquery-air to book this tour</span>');
+// 	$('.america').append(tel)
+// });
+
+
+// task-3-1-1 var "message" was used
 $(document).ready(function(){
-	var tel=$('<span>Call 1-555-jquery-air to book this tour</span>');
-	$('.america').append(tel)
+	var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
+	$('.america').append(message)
 });
+
+
 
