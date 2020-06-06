@@ -101,12 +101,22 @@
 // 	$('.vote').remove();
 // });
 
-// task-3-2-1 when click on any button the message
-// "Call 1-555-jquery-air to book this tour" appears and buttons disappear
+// task-3-2-1 when click on any button the message "Call 1-555-jquery-air
+//  to book this tour" appears and buttons disappear
+// $(document).ready(function(){
+// 	$('.vote').on('click', function(){
+// 		var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
+// 		$('li').append(message);
+// 		$('.vote').remove();
+// 	});
+// });
+
+
+// task-3-3. Click function was relocated on cards 
 $(document).ready(function(){
-	$('.vote').on('click', function(){
+	$('li').on('click', function(){
 		var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
-		$('li').append(message);
-		$('.vote').remove();
+		$('.america, .europe, .europe sale, .asia').append(message);
+		// $('.america').append(message);
 	});
 });
