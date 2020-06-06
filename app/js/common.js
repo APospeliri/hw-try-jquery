@@ -96,7 +96,7 @@
 // 	$('.america').append(message)
 // });
 
-// task-4-1 all buttons was removed
+// task-3-2 all buttons was removed
 $(document).ready(function(){
 	$('.vote').remove();
 });
