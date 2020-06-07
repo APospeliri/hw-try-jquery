@@ -238,14 +238,28 @@
 
 
 // task-3-9.
+// $(function(){
+// 	$('.book').on('click', function(){
+// 		let discount=$(this).closest('li').attr('data-discount');
+// 		$('li').css("color", "white");
+// 		$(this).closest('li').append(discount);
+// 		$(this).remove();
+// 	});
+// });
+// Если я правильно поняла задание 3-9, то я выполнила его, 
+// выполняя задание 3-8. 
+// Поэтому дублирую для 3-9 то же решение, что для 3-8
+
+
+// task-3-10. Используя конструкцию функции с событием клик, 
+// и  передачей кнопке 'button' перепишите 
+// задание сверху.$('.tour').on('click', 'button', function() { ...});                                                                                                   
+// Обратите внимание что за объект теперь будет - $(this)  
 $(function(){
-	$('.book').on('click', function(){
+	$('.tour').on('click','button', function(){
 		let discount=$(this).closest('li').attr('data-discount');
 		$('li').css("color", "white");
 		$(this).closest('li').append(discount);
 		$(this).remove();
 	});
 });
-// Если я правильно поняла задание 3-9, то я выполнила его, 
-// выполняя задание 3-8. 
-// Поэтому дублирую для 3-9 то же решение, что для 3-8
