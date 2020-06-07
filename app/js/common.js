@@ -185,10 +185,21 @@
 // });
 
 // task-3-3. Click function was relocated on cards 
+// $(document).ready(function(){
+// 	$('.tour').on('click', function(){
+// 		var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
+// 		$(this).append(message);
+// 		$(this).children('.book').remove();
+// 	});
+// });
+
+
+// task-3-4 When click on button message added only on this card. 
+// This button disappear
 $(document).ready(function(){
-	$('.tour').on('click', function(){
+	$('.book').on('click', function(){
 		var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
-		$(this).append(message);
-		$(this).children('.book').remove();
+		$(this).before(message);
+		$(this).remove();
 	});
 });
