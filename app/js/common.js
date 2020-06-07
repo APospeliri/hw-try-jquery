@@ -162,7 +162,12 @@
 	// })
 
 	// task-3-1-1 var "message" was used
-	$(document).ready(function (){
-		var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
-		$('.usa').children('.details').after(message);
+	// $(document).ready(function (){
+	// 	var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
+	// 	$('.usa').children('.details').after(message);
+	// })
+
+	// task-3-2 all buttons was removed
+	$(document).ready(function(){
+		$('button').remove()
 	})
