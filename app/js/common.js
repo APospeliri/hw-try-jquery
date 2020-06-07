@@ -115,10 +115,19 @@ $(function() {
 // 	})
 // })
 
-//3-6
-$('.tour').on('click', function(){
+//3-6, 3-7
+// $('.tour').on('click', function(){
+// 	let massage = $('<span>Call 1-555-jquery-air to book this tour</span>');
+// 	$(this).closest('.tour').append(massage)
+// 	$(this).find('button').remove('button')
+// 	})
+// })
+
+3-8
+$('.book').on('click', function(){
 	let massage = $('<span>Call 1-555-jquery-air to book this tour</span>');
 	$(this).closest('.tour').append(massage)
-	$(this).find('button').remove('button')
+	$(this).remove('button')
+	let discount = $('.tour').attr("data-discount")
 	})
 })
