@@ -175,11 +175,20 @@
 
 	// task-3-2-1 when click on any button the message "Call 1-555-jquery-air
 //  to book this tour" appears and buttons disappear
+// $(document).ready(function(){
+// 	$('.book').on('click', function(){
+// 		var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
+// 		// $(this).closest('li').children('span').after(message);
+// 		$(this).after(message);
+// 		$(this).remove();
+// 	});
+// });
+
+// task-3-3. Click function was relocated on cards 
 $(document).ready(function(){
-	$('.book').on('click', function(){
+	$('.tour').on('click', function(){
 		var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
-		// $(this).closest('li').children('span').after(message);
-		$(this).after(message);
-		$(this).remove();
+		$(this).append(message);
+		$(this).children('.book').remove();
 	});
 });
