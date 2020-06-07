@@ -214,10 +214,23 @@
 // });
 
 // task-3-6. Click on card; massage appears on card; button deleted(using "this")
-$(document).ready(function(){
-	$('.tour').on('click', function(){
-		var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
-		$(this).append(message);
-		$(this).children('.book').remove();
+// $(document).ready(function(){
+// 	$('.tour').on('click', function(){
+// 		var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
+// 		$(this).append(message);
+// 		$(this).children('.book').remove();
+// 	});
+// });
+
+
+// task-3-8. Установите функцию клика по кнопке внутри карточки. 
+// Добавьте сообщение и  удалите кнопку в этой карточке. 
+// Создайте переменную discount в нее запишите данные из атрибута data-discount.
+$(function(){
+	$('.book').on('click', function(){
+		let discount=$(this).closest('li').attr('data-discount');
+		$('li').css("color", "white");
+		$(this).closest('li').append(discount);
+		$(this).remove();
 	});
 });
