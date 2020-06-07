@@ -226,6 +226,18 @@
 // task-3-8. Установите функцию клика по кнопке внутри карточки. 
 // Добавьте сообщение и  удалите кнопку в этой карточке. 
 // Создайте переменную discount в нее запишите данные из атрибута data-discount.
+// $(function(){
+// 	$('.book').on('click', function(){
+// 		let discount=$(this).closest('li').attr('data-discount');
+// 		$('li').css("color", "white");
+// 		$(this).closest('li').append(discount);
+// 		$(this).remove();
+// 	});
+// });
+
+
+
+// task-3-9.
 $(function(){
 	$('.book').on('click', function(){
 		let discount=$(this).closest('li').attr('data-discount');
@@ -234,3 +246,6 @@ $(function(){
 		$(this).remove();
 	});
 });
+// Если я правильно поняла задание 3-9, то я выполнила его, 
+// выполняя задание 3-8. 
+// Поэтому дублирую для 3-9 то же решение, что для 3-8
