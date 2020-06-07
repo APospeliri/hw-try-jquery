@@ -142,10 +142,21 @@
 // })
 
 // task-3-6. Click on card, massage on card, delete button (using "this")
-$(document).ready(function(){
-	$('.america, .europe, .sale, .asia').on('click', function(){
+// $(document).ready(function(){
+// 	$('.america, .europe, .sale, .asia').on('click', function(){
+// 		var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
+// 		$(this).append(message);
+// 		$('.details', this).remove();
+// 	})
+// })
+
+
+
+
+
+
+	// task-3-1.in card USA  added'Call 1-555-jquery-air to book this tour'
+	$(document).ready(function() {
 		var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
-		$(this).append(message);
-		$('.details', this).remove();
+		$('.usa').children('span').after(message);
 	})
-})
