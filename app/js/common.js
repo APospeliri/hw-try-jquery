@@ -168,6 +168,18 @@
 	// })
 
 	// task-3-2 all buttons was removed
-	$(document).ready(function(){
-		$('button').remove()
-	})
+	// $(document).ready(function(){
+	// 	$('button').remove()
+	// })
+
+
+	// task-3-2-1 when click on any button the message "Call 1-555-jquery-air
+//  to book this tour" appears and buttons disappear
+$(document).ready(function(){
+	$('.book').on('click', function(){
+		var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
+		// $(this).closest('li').children('span').after(message);
+		$(this).after(message);
+		$(this).remove();
+	});
+});
