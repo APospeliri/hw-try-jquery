@@ -196,10 +196,19 @@
 
 // task-3-4 When click on button message added only on this card. 
 // This button disappear
+// $(document).ready(function(){
+// 	$('.book').on('click', function(){
+// 		var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
+// 		$(this).before(message);
+// 		$(this).remove();
+// 	});
+// });
+
+// task-3-5. Refactor using function "closest" and "append"
 $(document).ready(function(){
 	$('.book').on('click', function(){
 		var message=$('<span>Call 1-555-jquery-air to book this tour</span>');
-		$(this).before(message);
+		$(this).closest('li').append(message);
 		$(this).remove();
 	});
 });
