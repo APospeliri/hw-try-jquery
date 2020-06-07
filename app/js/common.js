@@ -108,9 +108,17 @@ $(function() {
 // })
 
 //3-5
-$('.book').on('click', function(){
+// $('.book').on('click', function(){
+// 	let massage = $('<span>Call 1-555-jquery-air to book this tour</span>');
+// 	$(this).closest('.tour').append(massage)
+// 	$(this).remove('button')
+// 	})
+// })
+
+//3-6
+$('.tour').on('click', function(){
 	let massage = $('<span>Call 1-555-jquery-air to book this tour</span>');
 	$(this).closest('.tour').append(massage)
-	$(this).remove('button')
+	$(this).find('button').remove('button')
 	})
 })
