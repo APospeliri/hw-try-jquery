@@ -227,7 +227,7 @@
 // Добавьте сообщение и  удалите кнопку в этой карточке. 
 // Создайте переменную discount в нее запишите данные из атрибута data-discount.
 // $(function(){
-// 	$('.book').on('click', function(){
+	// 	$('.book').on('click', function(){
 // 		let discount=$(this).closest('li').attr('data-discount');
 // 		$('li').css("color", "white");
 // 		$(this).closest('li').append(discount);
@@ -239,8 +239,8 @@
 
 // task-3-9.
 // $(function(){
-// 	$('.book').on('click', function(){
-// 		let discount=$(this).closest('li').attr('data-discount');
+	// 	$('.book').on('click', function(){
+		// 		let discount=$(this).closest('li').attr('data-discount');
 // 		$('li').css("color", "white");
 // 		$(this).closest('li').append(discount);
 // 		$(this).remove();
@@ -255,11 +255,26 @@
 // и  передачей кнопке 'button' перепишите 
 // задание сверху.$('.tour').on('click', 'button', function() { ...});                                                                                                   
 // Обратите внимание что за объект теперь будет - $(this)  
+// $(function(){
+// 		$('.tour').on('click','button', function(){
+// 			let discount=$(this).closest('li').attr('data-discount');
+// 			$('li').css("color", "white");
+// 			$(this).closest('li').append(discount);
+// 			$(this).remove();
+// 	});
+// });
+
+
+// task-3-9. Добавьте изменение к предыдущей задаче,
+//  использую переменную discount измените  текст сообщения которое будете 
+//  добавлять, после слов 'for a $' добавьте размер скидки.
 $(function(){
-	$('.tour').on('click','button', function(){
+	$('.book').on('click', function(){
+		let message=$('<span>Call 1-555-jquery-air to book this tour for a $</span>')
 		let discount=$(this).closest('li').attr('data-discount');
-		$('li').css("color", "white");
-		$(this).closest('li').append(discount);
+		let ending=$('<span>discount</span>');
+		$(this).closest('.tour').append(message, discount, ending);
 		$(this).remove();
+		$('li').css("color", "white");
 	});
 });
