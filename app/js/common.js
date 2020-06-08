@@ -152,9 +152,19 @@ $(function() {
 // 	})
 // }) 
 
+// //4-1
+// $('.tour').on('click','a', function(){
+// 	$(this).closest('.tour').find('.photos').slideToggle()
+// 	//$(this).remove()
+// 	})
+// }) 
+
 //4-1
-$('.tour').on('click','button', function(){
-	$(this).closest('.tour').find('.ticket').slideToggle('.ticket')
-	//$(this).remove()
-	})
+$('.tour').on('click','a', showPhoto)
+$('.tour').on('mouseenter','h2', showPhoto)
+
+function showPhoto (){
+	$(this).closest('.tour').find('.photos').slideToggle()
+
+}
 }) 
