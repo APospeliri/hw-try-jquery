@@ -131,11 +131,30 @@ $(function() {
 // 	let discount = $('.tour').attr("data-discount")
 // 	})
 // })
-3-8
-$('.book').on('click', function(){
-	let massage = 'Call 1-555-jquery-air to book this tour for a $'
-	let discount = $(this).closest('.tour').attr("data-discount")
-	$(this).closest('.tour').append('<span>' + massage + discount + '</span>')
-	$(this).remove('button')
+
+// //3-9
+
+// $('.book').on('click', function(){
+// 	// let massage = 'Call 1-555-jquery-air to book this tour for a $'
+// 	let discount = $(this).closest('.tour').attr("data-discount")
+// 	$(this).closest('.tour').append('<span>Call 1-555-jquery-air to book this tour for a $' + discount + '</span>')
+// 	$(this).remove('button')
+// 	})
+// }) 
+
+//3-10
+
+// $('.tour').on('click','button', function(){
+// 	// let massage = 'Call 1-555-jquery-air to book this tour for a $'
+// 	let discount = $(this).closest('.tour').attr("data-discount")
+// 	$(this).closest('.tour').append('<span>Call 1-555-jquery-air to book this tour for a $' + discount + '</span>')
+// 	$(this).remove()
+// 	})
+// }) 
+
+//4-1
+$('.tour').on('click','button', function(){
+	$(this).closest('.tour').find('.ticket').slideToggle('.ticket')
+	//$(this).remove()
 	})
 }) 
