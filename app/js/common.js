@@ -123,11 +123,19 @@ $(function() {
 // 	})
 // })
 
+// 3-8
+// $('.book').on('click', function(){
+// 	let massage = $('<span>Call 1-555-jquery-air to book this tour</span>');
+// 	$(this).closest('.tour').append(massage)
+// 	$(this).remove('button')
+// 	let discount = $('.tour').attr("data-discount")
+// 	})
+// })
 3-8
 $('.book').on('click', function(){
-	let massage = $('<span>Call 1-555-jquery-air to book this tour</span>');
-	$(this).closest('.tour').append(massage)
+	let massage = 'Call 1-555-jquery-air to book this tour for a $'
+	let discount = $(this).closest('.tour').attr("data-discount")
+	$(this).closest('.tour').append('<span>' + massage + discount + '</span>')
 	$(this).remove('button')
-	let discount = $('.tour').attr("data-discount")
 	})
-})
+}) 
