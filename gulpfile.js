@@ -43,7 +43,8 @@ gulp.task('sass', function() {
 
 gulp.task('libs', function() {
 	return gulp.src([
-		'app/libs/jquery/jquery-3.4.1.slim.min.js',
+		// 'app/libs/jquery/jquery-3.4.1.slim.min.js',
+		'app/libs/jquery/jquery-3.5.1.min.js',
 		])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
