@@ -268,13 +268,26 @@
 // task-3-9. Добавьте изменение к предыдущей задаче,
 //  использую переменную discount измените  текст сообщения которое будете 
 //  добавлять, после слов 'for a $' добавьте размер скидки.
-$(function(){
-	$('.book').on('click', function(){
-		let message=$('<span>Call 1-555-jquery-air to book this tour for a $</span>')
-		let discount=$(this).closest('li').attr('data-discount');
-		let ending=$('<span>discount</span>');
-		$(this).closest('.tour').append(message, discount, ending);
-		$(this).remove();
-		$('li').css("color", "white");
+// $(function(){
+// 	$('.book').on('click', function(){
+// 		let message=$('<span>Call 1-555-jquery-air to book this tour for a $</span>')
+// 		let discount=$(this).closest('li').attr('data-discount');
+// 		let ending=$('<span>discount</span>');
+// 		$(this).closest('.tour').append(message, discount, ending);
+// 		$(this).remove();
+// 		$('li').css("color", "white");
+// 	});
+// });
+
+
+
+
+
+// Лекция 4-1 При нажатии на кнопку
+//  должна открыться скрытая стилями информация (фотографии и текст) 
+$(function (){
+	$('.tour').on('click', 'button', function(){
+		$(this).closest('.tour').find('ul').slideDown();
 	});
 });
+
