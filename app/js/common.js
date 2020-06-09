@@ -306,11 +306,23 @@
 
 // 4-3 Скалькулировать скидку при указании количества билетов в 
 // поле ввода
-$('p').css('color','white')
+// $('p').css('color','white')
+// $(function(){
+// 	$('.tour').on('keyup','.quantity', function(){
+// 		let discount=+$(this).closest('.tour').data('discount');
+// 		let quantity=+$(this).val();
+// 		$(this).closest('.tour').find('.total').text(discount*quantity);
+// 	});
+// });
+
+
+// 4-4 При нажатии на ссылку страница не перескакивает вверх 
+// (к началу страницы); открываются фото при первом нажатии на ссылку, 
+// исчезают при следующем нажатии.
+$('.banner').css('display','flex').css('flex-direction', 'column');
 $(function(){
-	$('.tour').on('keyup','.quantity', function(){
-		let discount=+$(this).closest('.tour').data('discount');
-		let quantity=+$(this).val();
-		$(this).closest('.tour').find('.total').text(discount*quantity);
+	$('.tour').on('click', 'a', function(event) {
+		event.preventDefault();
+		$(this).closest('.tour').find('ul').fadeToggle();
 	});
 });
