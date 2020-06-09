@@ -295,10 +295,22 @@
 // Лекция 4-2 При нажатии на кнопку и при наведении 
 // мыши на заголовок h2 должна открыться скрытая стилями 
 // информация (фотографии и текст) 
-function showPhoto(){
-	$(this).closest('.tour').find('ul').slideDown();
-}
+// function showPhoto(){
+// 	$(this).closest('.tour').find('ul').slideDown();
+// }
+// $(function(){
+// 	$('.tour').on('click', 'button', showPhoto);
+// 	$('.tour').on('mouseenter', 'h2', showPhoto);
+// });
+
+
+// 4-3 Скалькулировать скидку при указании количества билетов в 
+// поле ввода
+$('p').css('color','white')
 $(function(){
-	$('.tour').on('click', 'button', showPhoto);
-	$('.tour').on('mouseenter', 'h2', showPhoto);
+	$('.tour').on('keyup','.quantity', function(){
+		let discount=+$(this).closest('.tour').data('discount');
+		let quantity=+$(this).val();
+		$(this).closest('.tour').find('#total').text(discount*quantity);
+	});
 });
