@@ -285,9 +285,20 @@
 
 // Лекция 4-1 При нажатии на кнопку
 //  должна открыться скрытая стилями информация (фотографии и текст) 
-$(function (){
-	$('.tour').on('click', 'button', function(){
-		$(this).closest('.tour').find('ul').slideDown();
-	});
-});
+// $(function (){
+// 	$('.tour').on('click', 'button', function(){
+// 		$(this).closest('.tour').find('ul').slideDown();
+// 	});
+// });
 
+
+// Лекция 4-2 При нажатии на кнопку и при наведении 
+// мыши на заголовок h2 должна открыться скрытая стилями 
+// информация (фотографии и текст) 
+function showPhoto(){
+	$(this).closest('.tour').find('ul').slideDown();
+}
+$(function(){
+	$('.tour').on('click', 'button', showPhoto);
+	$('.tour').on('mouseenter', 'h2', showPhoto);
+});
