@@ -311,6 +311,6 @@ $(function(){
 	$('.tour').on('keyup','.quantity', function(){
 		let discount=+$(this).closest('.tour').data('discount');
 		let quantity=+$(this).val();
-		$(this).closest('.tour').find('#total').text(discount*quantity);
+		$(this).closest('.tour').find('.total').text(discount*quantity);
 	});
 });
