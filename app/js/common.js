@@ -319,10 +319,20 @@
 // 4-4 При нажатии на ссылку страница не перескакивает вверх 
 // (к началу страницы); открываются фото при первом нажатии на ссылку, 
 // исчезают при следующем нажатии.
-$('.banner').css('display','flex').css('flex-direction', 'column');
+// $('.banner').css('display','flex').css('flex-direction', 'column');
+// $(function(){
+	// 	$('.tour').on('click', 'a', function(event) {
+		// 		event.preventDefault();
+// 		$(this).closest('.tour').find('ul').fadeToggle();
+// 	});
+// });
+
+
+// Лекция 5-1. При клике на карточку,  цвет карточки становится черным 
+// и появляется белая рамка, становятся видны фотографии
 $(function(){
-	$('.tour').on('click', 'a', function(event) {
-		event.preventDefault();
-		$(this).closest('.tour').find('ul').fadeToggle();
+	$('.banner').on('click', '.tour', function(){
+		$(this).css({'background-color' : 'black', 'border' : '3px solid white'});
+		$(this).find('.photos').show();
 	});
 });
