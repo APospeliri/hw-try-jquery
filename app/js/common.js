@@ -330,9 +330,19 @@
 
 // Лекция 5-1. При клике на карточку,  цвет карточки становится черным 
 // и появляется белая рамка, становятся видны фотографии
+// $(function(){
+// 	$('.banner').on('click', '.tour', function(){
+// 		$(this).css({'background-color' : 'black', 'border' : '3px solid white'});
+// 		$(this).find('.photos').show();
+// 	});
+// });
+
+// Лекция 5-1-1. При клике на карточку,  цвет карточки становится черным 
+// и появляется белая рамка, становятся видны фотографии. 
+// Использовать стили css.
+// При повторном клике стили возвращаются
 $(function(){
 	$('.banner').on('click', '.tour', function(){
-		$(this).css({'background-color' : 'black', 'border' : '3px solid white'});
-		$(this).find('.photos').show();
+		$(this).toggleClass('blackstyle');
 	});
 });
