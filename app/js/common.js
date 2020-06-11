@@ -176,10 +176,16 @@ $(function() {
 // 	$('#totalprice').text(quantity * price)
 // })
 
-//4-4
-$('.tour').on('click','.see-photos', function(){
-	event.preventDefault()
-	$(this).closest('.tour').find('.photos').fadeToggle()
-	//$(this).remove()
+// //4-4
+// $('.tour').on('click','.see-photos', function(){
+// 	event.preventDefault()
+// 	$(this).closest('.tour').find('.photos').fadeToggle()
+// 	//$(this).remove()
+// })
+
+//5-1
+$('.tour').css('cursor','pointer').on('click', function(){
+	$(this).toggleClass('change-bg')
+
 })
 }) 
