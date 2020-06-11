@@ -150,21 +150,36 @@ $(function() {
 // 	$(this).closest('.tour').append('<span>Call 1-555-jquery-air to book this tour for a $' + discount + '</span>')
 // 	$(this).remove()
 // 	})
-// }) 
+ 
 
 // //4-1
 // $('.tour').on('click','a', function(){
 // 	$(this).closest('.tour').find('.photos').slideToggle()
 // 	//$(this).remove()
 // 	})
-// }) 
 
-//4-1
-$('.tour').on('click','a', showPhoto)
-$('.tour').on('mouseenter','h2', showPhoto)
 
-function showPhoto (){
-	$(this).closest('.tour').find('.photos').slideToggle()
+// //4-2
+// $('.tour').on('click','a', showPhoto)
+// $('.tour').on('mouseenter','h2', showPhoto)
 
-}
+// function showPhoto (){
+// 	$(this).closest('.tour').find('.photos').slideToggle()
+
+// }
+
+
+// //4-3
+// $('.tour').on('keyup','.quantity', function(){
+// 	let price = +$(this).closest('.tour').attr("data-discount")
+// 	let quantity = +$(this).val()
+// 	$('#totalprice').text(quantity * price)
+// })
+
+//4-4
+$('.tour').on('click','.see-photos', function(){
+	event.preventDefault()
+	$(this).closest('.tour').find('.photos').fadeToggle()
+	//$(this).remove()
+})
 }) 
